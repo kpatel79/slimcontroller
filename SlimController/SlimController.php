@@ -156,11 +156,11 @@ abstract class SlimController
                 $name = $n;
             }
         }
-        $args = array_merge([
+        $args = array_merge(array(
             'constraint' => null,
             'default'    => null,
             'raw'        => false
-        ], $args);
+        ), $args);
 
         // prefix name
         $name = $this->paramPrefix. $name;
